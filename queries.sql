@@ -16,6 +16,6 @@ VALUES (100, 'The Shire', 'Bilbo Baggins', '1 Hobbit Hole', 'Bag End', '111', 'M
 -- Update Bilbo Baggins record so that the postal code changes to "11122"
 UPDATE [Customers] SET PostalCode='11122' WHERE CustomerID=100
 -- (Stretch) Find a query to discover how many different cities are stored in the Customers table. Repeats should not be double counted
-SELECT DISTINCT City FROM [Customers] --There are 70 Unique Cities
+SELECT DISTINCT City FROM [Customers] --There are 69 Unique Cities
 -- (Stretch) Find all suppliers who have names longer than 20 characters. You can use `length(SupplierName)` to get the length of the name
 SELECT * FROM [Suppliers] WHERE length(SupplierName)>20 --There are 11 Suppliers with names longer than 20 characters
